@@ -1,0 +1,671 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	margin:0;		
+}
+
+p {
+    line-height: 110%;
+}
+
+strong {
+	
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    /* margin-left: auto; margin-right: auto; */
+}
+
+.text-c {
+	text-align: center;
+}
+
+.top-banner .close {
+    font-weight: 300;
+    text-shadow: none;
+	opacity: 1;	
+}
+
+.top-banner .close a {
+    color: #fff;
+}
+
+.top-banner {
+    background-image: url(../img/banner-tanner.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+.top-banner .menu-open button, .top-banner .back a {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    border: 2px solid;
+}
+
+.top-banner .menu-open button:hover, .top-banner .back a:hover {
+    background-color: #78be20;
+}
+
+.top-banner h1 {
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10%;
+	text-transform: uppercase;	
+}
+
+.navbar-brand {
+    padding: 0 !important;
+    height: auto !important;
+    margin-top: 4px;
+}
+
+.navbar {
+    background: transparent;
+    color: #fff;
+    padding: 5px 15px !important;
+	box-shadow: none !important;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 5px 0;
+}
+
+.content {
+    /*height:100%;*/
+    /*min-height:100%;*//*for mozilla*/
+}
+
+.holder {
+	align-items: center;
+}
+
+.icon-scroll {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	z-index: 10000;	
+	display: none;
+}
+
+.center-img img {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo img {
+	float: right;
+}
+
+.logo .title h1 {
+	display: block;
+	text-align: center;
+	font-weight: 900;
+	color: #2D2D2D;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+}
+
+.text h2 {
+	font-weight: 400;
+	color: #2D2D2D;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.text h3 {
+    font-weight: 400;
+    color: #1a499f;
+    margin-bottom: 20px;
+    font-family: 'Slabo 27px', sans-serif;
+}
+
+.text p {
+	font-weight: 300;
+	color: #2D2D2D;
+	margin-bottom: 20px;
+}
+
+.text-title .text-top {
+	font-weight: 600;
+	color: #2D2D2D;
+}
+
+.text-title .text-bot {
+	font-weight: 700;
+	color: #0060A8;
+}
+
+.box .tip {
+	margin: 20px 0;
+	padding: 15px 10px 5px 10px;
+}
+
+.box .tip p {
+	color: #fff;
+}
+
+.box .color-d-b {
+	background: #1A4AA0;
+}
+
+.box .color-p {
+	background: #76549F;
+}
+
+.box .color-l-b {
+	background: #0D97D3;
+}
+
+.box .color-g {
+	background: #76B830;
+}
+
+.box .color-o {
+	background: #e8821c;
+}
+
+.box .color-y {
+	background: #FFA901;
+}
+
+.box .color-g-b {
+	background: #008A8A;
+}
+
+.box .color-d-p {
+	background: #008A8A;
+}
+
+/* XS _______________________________________________________________ */
+@media (min-width: 440px) {
+
+    .navbar ul li {
+        border-right: 1px solid #5183da;
+        padding: 10px 3px;
+        font-size: 9px;
+    }
+	
+	.navbar {
+		margin-bottom: 15px;
+	}
+
+	.top-banner .close a {
+		font-size: 11px;
+	}
+
+	.top-banner .back a {
+		font-size: 11px;
+	}
+
+	.top-banner h1 {
+		font-size: 25px;
+	}	
+
+    .holder {
+        display: inherit;
+        min-height: 20%; /* Fallback for browsers do NOT support vh unit */
+        min-height: 20vh; /* These two lines are counted as one :-)       */
+        padding: 0px;
+    }
+
+    .content {
+        padding: 15% 0;
+    }
+
+    .logo {
+        margin-top: 45%;
+    }
+
+    .logo .title h1 {
+        padding-right: 0;
+        font-size: 25px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .text p {
+        font-size: 16px;;
+    }
+
+    .text-title .text-top {
+        font-size: 40px;
+    }
+
+    .text-title .text-bot {
+        font-size: 20px;
+    }
+
+    .box .tip p {
+        font-size: 15px;
+    }
+
+}
+
+/* XS _______________________________________________________________ */
+@media (max-width: 480px) {
+
+    .navbar ul li {
+        border-right: 0;
+        padding: 10px 5px;
+        font-size: 10px;
+    }
+	
+	.navbar {
+		margin-bottom: 15px;
+	}
+
+	.top-banner .close a {
+		font-size: 11px;
+	}
+
+	.top-banner .back a {
+		font-size: 11px;
+	}
+
+	.top-banner h1 {
+		font-size: 30px;
+	}	
+
+    .holder {
+        display: inherit;
+        min-height: 20%; /* Fallback for browsers do NOT support vh unit */
+        min-height: 20vh; /* These two lines are counted as one :-)       */
+        padding: 0px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 40%;
+    }
+
+    .logo .title h1 {
+        padding-right: 0;
+        font-size: 65px;
+        font-weight: normal;
+    }
+
+    .logo .title h1 strong {
+        font-weight: bold;
+        font-size: 65px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .text p {
+        font-size: 18px;;
+    }
+
+    .text-title .text-top {
+        font-size: 40px;
+    }
+
+    .text-title .text-bot {
+        font-size: 20px;
+    }
+
+    .box .tip p {
+        font-size: 15px;
+    }
+
+}
+
+/* XS _______________________________________________________________ */
+@media (min-width: 500px) {
+
+    .navbar ul li {
+        border-right: 1px solid #5183da;
+        padding: 10px 5px;
+        font-size: 10px;
+    }
+	
+	.navbar {
+		margin-bottom: 15px;
+	}
+
+	.top-banner .close a {
+		font-size: 11px;
+	}
+
+	.top-banner .back a {
+		font-size: 11px;
+	}
+
+	.top-banner h1 {
+		font-size: 33px;
+	}	
+
+    .holder {
+        display: inherit;
+        min-height: 20%; /* Fallback for browsers do NOT support vh unit */
+        min-height: 20vh; /* These two lines are counted as one :-)       */
+        padding: 0px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 35%;
+    }
+
+    .logo .title h1 {
+        padding-right: 0;
+        font-size: 60px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .text h3 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;;
+    }
+
+    .text-title .text-top {
+        font-size: 50px;
+    }
+
+    .text-title .text-bot {
+        font-size: 30px;
+    }
+
+    .box .tip p {
+        font-size: 15px;
+    }
+
+}
+
+/* SM _______________________________________________________________ */
+@media (min-width: 767px) {
+
+    .navbar ul li {
+        border-right: 1px solid #5183da;
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+	
+	.navbar {
+		margin-bottom: 30px;
+	}
+
+	.top-banner .close a {
+		font-size: 12px;
+	}
+
+	.top-banner .back a {
+		font-size: 12px;
+	}
+
+	.top-banner h1 {
+		font-size: 35px;
+	}	
+
+    .holder {
+        display: flex;
+        min-height: 20%; /* Fallback for browsers do NOT support vh unit */
+        min-height: 20vh; /* These two lines are counted as one :-)       */
+        padding: 15px 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 25%;
+    }
+
+    .logo .title h1 {
+        padding-right: 4%;
+        font-size: 65px;
+    }
+
+    .text h2 {
+        font-size: 35px;
+    }
+
+    .text h3 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;;
+    }
+
+    .text-title .text-top {
+        font-size: 65px;
+    }
+
+    .text-title .text-bot {
+        font-size: 40px;
+    }
+
+    .box .tip p {
+        font-size: 15px;
+    }
+
+}
+
+/* MD _______________________________________________________________ */
+@media (min-width: 992px) {
+
+    .navbar ul li {
+        border-right: 1px solid #5183da;
+        padding: 10px 9px;
+        font-size: 12px;
+    }
+	
+	.navbar {
+		margin-bottom: 35px;
+	}
+
+	.top-banner .close a {
+		font-size: 13px;
+	}
+
+	.top-banner .back a {
+		font-size: 13px;
+	}
+
+	.top-banner h1 {
+		font-size: 40px;
+	}	
+
+    .holder {
+        display: flex;
+        min-height: 20%; /* Fallback for browsers do NOT support vh unit */
+        min-height: 20vh; /* These two lines are counted as one :-)       */
+        padding: 40px 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 5%;
+    }
+
+    .logo .title h1 {
+        padding-right: 5%;
+        font-size: 100px;
+    }
+
+    .text h2 {
+        font-size: 38px;
+    }
+
+    .text h3 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 24px;;
+    }
+
+    .text-title .text-top {
+        font-size: 72px;
+    }
+
+    .text-title .text-bot {
+        font-size: 47px;
+    }
+
+    .box .tip p {
+        font-size: 18px;
+    }
+
+}
+
+/* LG________________________________________________________________ */
+@media (min-width: 1200px) {
+
+    .navbar ul li {
+        border-right: 1px solid #5183da;
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .holder {
+        display: flex;
+        min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh; /* These two lines are counted as one :-)       */
+        padding: 40px 0;
+    }
+
+	.navbar {
+		margin-bottom: 40px;
+	}
+
+	.top-banner .close a {
+		font-size: 13px;
+	}
+
+	.top-banner .back a {
+		font-size: 13px;
+	}
+
+	.top-banner h1 {
+		font-size: 42px;
+	}	
+	
+    .content {
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 5%;
+    }
+
+    .logo .title h1 {
+        padding-right: 6%;
+        font-size: 140px;
+        line-height: 110px;
+    }
+
+    .text h2 {
+        font-size: 40px;
+    }
+
+    .text h3 {
+        font-size: 65px;
+    }
+
+    .text p {
+        font-size: 24px;;
+    }
+
+    .text-title .text-top {
+        font-size: 75px;
+    }
+
+    .text-title .text-bot {
+        font-size: 50px;
+    }
+
+    .box .tip p {
+        font-size: 18px;
+    }
+
+}
+
+.content img {
+    -webkit-box-shadow: -1px 6px 29px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 6px 29px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 6px 29px 0px rgba(0, 0, 0, 0.5);
+}
+
+.content img.noshadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.content {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&0.1+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(30, 87, 153, 0.1) 0%, rgba(125, 185, 232, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 87, 153, 0.1) 0%, rgba(125, 185, 232, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 87, 153, 0.1) 0%, rgba(125, 185, 232, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1e5799', endColorstr='#007db9e8', GradientType=0); /* IE6-9 */
+}
+
+.content:nth-of-type(3n) {
+    background: -moz-linear-gradient(top, rgba(120, 182, 60, 0.15) 0%, rgba(125, 185, 232, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(120, 182, 60, 0.15) 0%, rgba(125, 185, 232, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(120, 182, 60, 0.15) 0%, rgba(125, 185, 232, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1e5799', endColorstr='#007db9e8', GradientType=0); /* IE6-9 */
+
+}
+
+.content.head {
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 300px;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.7);
+}

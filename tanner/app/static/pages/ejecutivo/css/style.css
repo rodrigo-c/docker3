@@ -1,0 +1,412 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 140%;
+    color: #999;
+}
+
+.icon-scroll {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	z-index: 10000;	
+	display: none;
+}
+
+.n-p {
+	padding: 0;
+}
+
+.f-no {
+	float: inherit;
+}
+
+.f-l {
+	float: left;
+}
+
+.f-r {
+	float: right;
+}
+
+.top-banner .navbar {
+	background: transparent;
+	box-shadow: none;
+}
+
+.top-banner .navbar-btn {
+	margin: 0;
+}
+
+.top-banner {
+	background-image: url(../img/banner-tanner.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+    background-size: cover;	
+	margin-bottom: 20px;
+}
+
+.top-banner .close a:hover {
+	text-decoration: underline; 
+}
+
+.top-banner h1 {
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.top-banner .close {
+	opacity: 1;
+	font-weight: 300;	
+	text-shadow: none;
+}
+
+.top-banner .close a {
+	color: #fff;
+}
+
+.top-banner .menu-open button, .top-banner .back a {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    border: 2px solid;
+}
+
+.top-banner .menu-open button:hover, .top-banner .back a:hover {
+    background-color: #78be20;
+}
+
+.content h2 {
+	background-color: #78be20;
+	color: #fff;
+	font-weight: 800;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+.content a {
+	color: #4d8fcd;
+}
+
+.content a:hover {
+	color: #004e99;
+}
+
+.content p {	
+	margin-bottom: 25px;
+	color: #001637;
+}
+
+.content span {
+	color: #fff;
+	border-radius: 20px;
+	background-color: #78be20;
+	font-weight: 400;
+	padding: 7px;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 35px;
+}
+
+.content ul {
+	list-style:none;
+	margin: 0;
+	padding:0;
+}
+
+.content ul li {
+	margin: 0 0 20px 0;
+	background: url(../img/bullet.png) no-repeat 0 0;
+	padding-left:25px;
+    font-weight: 300;
+    line-height: 140%;
+    color: #001637;	
+}
+
+.content .capture img {
+	border: 3px solid #949494;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+
+/* XS _______________________________________________________________ */
+@media (max-width: 480px) {
+
+.navbar {
+    margin-bottom: 15px;
+}
+
+.top-banner .close a {
+	font-size: 11px;
+}
+
+.top-banner .back a {
+	font-size: 11px;
+}
+
+.top-banner h1 {
+	font-size: 25px;
+}
+
+.content h2 {
+	font-size: 20px;
+}
+
+.content p {
+	font-size: 12px;
+}
+
+.content span {
+	font-size: 12px;
+}
+
+.content ul li {
+	font-size: 12px;
+}
+
+.number {
+	width: 15%;
+}
+
+.text {
+	width: 85%;
+}			
+	
+}		
+	
+
+/* XS _______________________________________________________________ */
+@media (min-width: 440px) {
+
+.navbar {
+    margin-bottom: 15px;
+}
+
+.top-banner .close a {
+	font-size: 11px;
+}
+
+.top-banner .back a {
+	font-size: 11px;
+}
+
+.top-banner h1 {
+	font-size: 30px;
+}
+
+.content h2 {
+	font-size: 20px;
+}
+
+.content p {
+	font-size: 12px;
+}
+
+.content span {
+	font-size: 12px;
+}
+
+.content ul li {
+	font-size: 12px;
+}
+
+.number {
+	width: 9%;
+}
+
+.text {
+	width: 91%;
+}	
+	
+}
+
+/* XS _______________________________________________________________ */
+@media (min-width: 500px) {
+
+.navbar {
+    margin-bottom: 25px;
+}
+
+.top-banner h1 {
+	font-size: 33px;
+}
+
+.content h2 {
+	font-size: 21px;
+}
+
+.content p {
+	font-size: 12px;
+}
+
+.content span {
+	font-size: 12px;
+}
+
+.content ul li {
+	font-size: 12px;
+}
+
+.number {
+	width: 8%;
+}
+
+.text {
+	width: 92%;
+}	
+	
+}
+
+
+/* SM _______________________________________________________________ */
+@media (min-width: 767px) {
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.top-banner .close a {
+	font-size: 12px;
+}
+
+.top-banner .back a {
+	font-size: 12px;
+}
+
+.top-banner h1 {
+	font-size: 35px;
+}
+
+.content h2 {
+	font-size: 25px;
+}
+
+.content p {
+	font-size: 13px;
+}
+
+.content span {
+	font-size: 13px;
+}
+
+.content ul li {
+	font-size: 13px;
+}
+
+.number {
+	width: 5%;
+}
+
+.text {
+	width: 95%;
+}	
+	
+}
+
+
+/* MD _______________________________________________________________ */
+@media (min-width: 992px) {
+
+.navbar {
+    margin-bottom: 35px;
+}
+
+.top-banner .close a {
+	font-size: 13px;
+}
+
+.top-banner .back a {
+	font-size: 13px;
+}
+
+.top-banner h1 {
+	font-size: 40px;
+}
+
+.content h2 {
+	font-size: 28px;
+}
+
+.content p {
+	font-size: 14px;
+}
+
+.content span {
+	font-size: 14px;
+}
+
+.content ul li {
+	font-size: 14px;
+}
+
+.number {
+	width: 5%;
+}
+
+.text {
+	width: 95%;
+}
+	
+}
+
+
+/* LG________________________________________________________________ */
+@media (min-width: 1200px) {
+
+.navbar {
+    margin-bottom: 40px;
+}
+
+.top-banner .close a {
+	font-size: 13px;
+}
+
+.top-banner .back a {
+	font-size: 13px;
+}
+
+.top-banner h1 {
+	font-size: 42px;
+}
+
+.content h2 {
+	font-size: 30px;
+}
+
+.content p {
+	font-size: 15px;
+}
+
+.content span {
+	font-size: 14px;
+}
+
+.content ul li {
+	font-size: 15px;
+}
+
+.number {
+	width: 5%;
+}
+
+.text {
+	width: 95%;
+}
+
+.text-2 {
+	width: 100%;
+}
+
+	
+}

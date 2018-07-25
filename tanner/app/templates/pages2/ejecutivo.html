@@ -1,0 +1,646 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Tanner | Manual Dealer Ejecutivo</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link href = "{% static 'pages/'|add:slug|add:'/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+		
+        <!-- Our Custom CSS -->
+		<link rel="stylesheet" href = "{% static 'pages/'|add:slug|add:'/css/style.css' %} ">
+        <link rel="stylesheet" href = "{% static 'pages/'|add:slug|add:'/css/style-sidebar.css' %} ">
+		
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href = "{% static 'pages/'|add:slug|add:'/vendor/jquery/jquery.mCustomScrollbar.min' %} ">
+		
+		<!-- Font Awesome -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
+        
+    </head>
+    <body id="top">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <br/><br/><br/>
+					<p><strong>MANUAL MÓNACO – Ejecutivo</strong></p>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#ingreso" data-toggle="collapse" aria-expanded="false"><strong>1. Ingreso</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="ingreso">
+							<li><a href="#001">1.0 Ingreso Mónaco</a></li>
+                            <li><a href="#01">1.1 Enlace</a></li>
+                            <li><a href="#012">1.2 Ingreso Email y Contraseña</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cotizacion" data-toggle="collapse" aria-expanded="false"><strong>2. Cotización</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="cotizacion">
+							<li><a href="#002">2.0 Nueva cotización</a></li>
+                            <li><a href="#021">2.1 Ingresar Cotización</a></li>
+                            <li><a href="#022">2.2 Tiene Comisión</a></li>
+							<li><a href="#023">2.3 Datos del Crédito</a></li>
+							<li><a href="#024">2.4 Resultado Simulación</a></li>
+							<li><a href="#025">2.5 Valores Sistema</a></li>
+							<li><a href="#026">2.6 Datos Cliente</a></li>
+							<li><a href="#027">2.7 Antigüedad Laboral</a></li>
+							<li><a href="#028">2.8 Chat</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#bandeja" data-toggle="collapse" aria-expanded="false"><strong>3. Bandeja</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="bandeja">
+							<li><a href="#003">3.0 Bandeja</a></li>
+                            <li><a href="#031">3.1 Negocios Ingresados</a></li>
+                            <li><a href="#032">3.2 Solicitudes en Evaluación</a></li>
+							<li><a href="#033">3.3 Campana</a></li>
+							<li><a href="#034">3.4 Íconos</a></li>
+                        </ul>
+                    </li>					
+                    <li>
+                        <a href="#validar" data-toggle="collapse" aria-expanded="false"><strong>4. Validar</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="validar">
+							<li><a href="#004">4.0 Validar un Negocio</a></li>
+                            <li><a href="#041">4.1 Enviar a Validar</a></li>
+                            <li><a href="#042">4.2 Adjuntar Documentos</a></li>
+							<li><a href="#043">4.3 Click Adjuntar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#impresion" data-toggle="collapse" aria-expanded="false"><strong>5. Impresión</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="impresion">
+							<li><a href="#005">5.0 Impresión de Documentos</a></li>
+                            <li><a href="#051">5.1 Descargar Documentos</a></li>
+                            <li><a href="#052">5.2 Descargar PDF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cursar" data-toggle="collapse" aria-expanded="false"><strong>6. Cursar</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="impresion">
+							<li><a href="#006">6.0 Enviar a cursar</a></li>
+                            <li><a href="#061">6.1 Créditos con Carta</a></li>
+                            <li><a href="#062">6.2 Enviar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#creditos" data-toggle="collapse" aria-expanded="false"><strong>7. Créditos</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="creditos">
+							<li><a href="#007">7.0 Créditos cursados y/o otorgados</a></li>
+                            <li><a href="#071">7.1 Créditos con Carta</a></li>
+                            <li><a href="#072">7.2 Enviar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#solicitar" data-toggle="collapse" aria-expanded="false"><strong>8. Solicitar Excepción</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="solicitar">
+							<li><a href="#008">8.0 Solicitar Excepción de Seguro</a></li>
+                            <li><a href="#081">8.1 Requiera Solicitar</a></li>
+                            <li><a href="#082">8.2 Solicitud de Excepciones</a></li>
+							<li><a href="#083">8.3 Enviar</a></li>
+                        </ul>
+                    </li>	
+                    <li>
+                        <a href="#apelacion" data-toggle="collapse" aria-expanded="false"><strong>9. Apelación</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="apelacion">
+							<li><a href="#009">9.0 Apelación de negocios</a></li>
+                            <li><a href="#091">9.1 Créditos Rechazados</a></li>
+                            <li><a href="#092">9.2 Enviar a Reevaluar</a></li>
+							<li><a href="#093">9.3 Chat</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#rechazados" data-toggle="collapse" aria-expanded="false"><strong>10. Rechazados</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="rechazados">
+							<li><a href="#010">10.0 Créditos rechazados</a></li>
+                            <li><a href="#101">10.1 Copia Créditos Rechazados</a></li>
+                            <li><a href="#102">10.2 Solicitudes en Evaluación</a></li>
+                        </ul>
+                    </li>					
+                </ul>
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+				<div class="top-banner">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">					
+								<nav class="navbar navbar-default">
+									<div class="fluid">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img src = "{% static 'pages/'|add:slug|add:'/img/logo-tanner.png' %} " class="img-responsive"/>
+											</div>
+
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<div class="close">
+													<a href="#" class="pull-right"><i class="far fa-window-close"></i> Cerrar sesión</a>
+												</div>
+											</div>
+										</div>	
+										
+										<div class="row">
+											<br/><br/>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<div class="navbar-header">
+													<div class="menu-open bg-color">
+														<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+															<i class="fas fa-bars"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											
+											<div class="col-lg-6 col-md-6 col-sm-6 col-6-xs">
+												<div class="back">
+													<a href="{% url 'list' %}" class="btn btn-secondary pull-right" id="menu-toggle"><i class="fas fa-chevron-left"></i> Volver</a>
+												</div>
+											</div>
+											<br/><br/>
+										</div>		
+										
+										<div class="row">
+											<div class="col-lg-12 n-p">	
+												<h1>MANUAL MÓNACO – EJECUTIVO</h1>
+											</div>
+										</div>
+										
+									</div>
+								</nav>
+							</div>
+						</div>	
+
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+							<div class="content"> 
+								
+								<div id="001">&nbsp;</div>	
+								<h2>1. Ingreso Mónaco</h2>
+								
+								<div id="01">&nbsp;</div>
+								<p><span>1.1</span>  Escribe el siguiente enlace en tu navegador: <a href="#">https://monaco.tanner.cl/</a></p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-1.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+								
+								<div id="012">&nbsp;</div>
+								<p><span>1.2</span>  Ingresar tu email y contraseña.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-2.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>						
+																	
+								<div id="002">&nbsp;</div>	
+								<h2>2. Cotización</h2>
+								
+								<div id="021">&nbsp;</div>
+								<p><span class="f-l">2.1</span> Para ingresar un negocio hacer click en <strong>“Nueva cotización”</strong>.</p>
+
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>																
+								
+								<div id="022">&nbsp;</div>
+								<p><span class="f-l">2.2</span> Luego, debemos seleccionar la automotora, sucursal y vendedor. Si el negocio lleva comisión debemos hacer click en <strong>“tiene comisión”</strong>.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>									
+								
+								<div id="023">&nbsp;</div>
+								<p><span class="f-l">2.3</span> Una vez ingresados los datos del Dealer ya podremos ingresar los datos del crédito, así como la información del vehículo y seguros asociados. Para obtener valores cuota hacemos click en <strong>“simular”</strong>.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-3.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-3-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>								
+								
+								<div id="024">&nbsp;</div>
+								<p><span class="f-l">2.4</span> El sistema nos arrojará el resultado de la simulación, la cual automáticamente indica la <strong>comisión</strong> del
+								Dealer (según sus tasas piso). El nombre del cliente se ingresa automáticamente (al ingresar RUT).
+								Si necesitan cambiar algo del negocio sólo deben modificar los datos. En el caso de que estén ok
+								con los valores, hacen click en <strong>“Cotizar”</strong> y siguen con los datos del cliente faltantes.</p>
+								
+								<div id="025">&nbsp;</div>
+								<span class="f-l">2.5</span> <p><strong>OJO</strong>, el sistema nos arroja valores cuota por separado; <strong>48 cuotas de $194.448</strong> que incluyen todos los
+								costos del crédito, incluyendo seguros personales. Y por otro lado, nos arroja <strong>12 cuotas de $18.688</strong>
+								correspondiente al seguro básico automotriz. Por ende, las <u>12 primeras cuotas del crédito total
+								serán de $213.136 y a partir de la cuota 13 será de $194.448</u>.
+								</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-4.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-4-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>								
+								
+								<div id="026">&nbsp;</div>
+								<p><span class="f-l">2.6</span> Se deben completar los datos del cliente y se podrán adjuntar los documentos (en caso de que los tengan)
+								antes de enviar a evaluación. Completados los datos, hacen click en <strong>“Enviar”</strong> y así se envía a evaluación.</p>
+								
+								<div id="027">&nbsp;</div>
+								<p><span class="f-l">2.7</span> Antigüedad laboral se debe reflejar en n° de meses (2 años = 24 meses).</p>
+								<br/>
+								<div id="028">&nbsp;</div>
+								<p><span class="f-l">2.8</span> Chat en el cual podrán escribir al evaluador las fortalezas del negocio (opcional).</p>
+
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-6.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-6-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-6-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="003">&nbsp;</div>	
+								<h2>3. Bandeja</h2>								
+								
+								
+								<div id="031">&nbsp;</div>
+								<p><span class="f-l">3.1</span> La <strong>“bandeja”</strong> contiene todos los negocios ingresados en sus distintos status; <strong>Solicitudes en Evaluación</strong>, <strong>Créditos con Carta</strong>, <strong>Créditos Cursados</strong>, <strong>Créditos Rechazados</strong>.</p>								
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>								
+								
+								<div id="032">&nbsp;</div>
+								<p><span class="f-l">3.2</span> En <strong>“solicitudes en evaluación”</strong> encontrarán todos los negocios que estén en evaluación, aprobados con condición, excepción evaluada, en validación, validado con reparos.</p>
+
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+								
+								<ul>
+									<li><strong>En evaluación:</strong> negocio está siendo o será evaluado por un evaluador de riesgo.</li>
+									<li><strong>Aprobado con condición:</strong> negocio pre aprobado pendiente de validación.</li>
+									<li><strong>En validación:</strong> negocio está siendo o será validado por un validador de riesgo.</li>
+									<li><strong>Validado con reparos:</strong> negocio se validó pero falta documentación para emitir carta.</li>							
+								</ul>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-2-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-2-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>									
+								
+								<div id="033">&nbsp;</div>
+								<p><span class="f-l">3.3</span> Al hacer click en la <strong>campana</strong> puedo visualizar las actualizaciones de mis negocios.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-3.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-3-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+								
+								<div id="034">&nbsp;</div>
+								<p><span class="f-l">3.4</span> Los íconos marcados en el cuadro rojo indican lo siguiente; <i class="fas fa-edit"></i> <strong>“ver solicitud”</strong> (al ingresar podrán ver 
+								todos los datos del negocio ingresado y podrán enviar a validar. <i class="far fa-file-alt"></i> <strong>“editar documentación”</strong> (al ingresar podrán
+								descargar la documentación para firma, así como adjuntar documentos. <i class="far fa-copy"></i> <strong>“crear copia"</strong> (al ingresar podrán 
+								realizar una copia de ese negocio y podrán cambiar el planteamiento del negocio, automáticamente se anulará 
+								el negocio original).</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-4.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-4-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="004">&nbsp;</div>	
+								<h2>4. Validar un negocio</h2>	
+
+								<div id="041">&nbsp;</div>	
+								<p><span class="f-l">4.1</span> Para poder enviar a validar un negocio hacemos click en <i class="fas fa-edit"></i></p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-5.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-5-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="042">&nbsp;</div>
+								<p><span class="f-l">4.2</span> Nos aparecerá la siguiente pantalla en la cual debemos adjuntar los documentos <i>*Requeridos para validar</i> y luego click en <strong>“Enviar a validar”<strong>.</p>	
+
+								<div id="043">&nbsp;</div>
+								<p><span class="f-l">4.3</span> Se debe pinchar para adjuntar documentación.</p>								
+
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-6.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-6-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-6-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>		
+
+								<div id="005">&nbsp;</div>
+								<h2>5. Impresión de documentos</h2>
+									
+								<div id="051">&nbsp;</div>	
+								<p><span class="f-l">5.1</span> Para descargar los set de documentos hacemos click en <i class="far fa-file-alt"></i></p>	
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-8.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-8-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+								
+								<div id="052">&nbsp;</div>
+								<p><span class="f-l">5.2</span> Para descargar cada documento deben hacer click en <strong>“Plantilla”</strong> y se descargarán archivos en PDF.</p>
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-9.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-9-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+								
+								<div id="006">&nbsp;</div>
+								<h2>6. Enviar a cursar</h2>
+								
+								<div id="061">&nbsp;</div>
+								<p><span class="f-l">6.1</span> Debemos ir a nuestra bandeja de <strong>“Créditos con Carta”</strong> y luego hacer click en <i class="far fa-file-alt"></i></p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/6-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/6-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/6-1-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>									
+								
+								<div id="062">&nbsp;</div>
+								<p><span class="f-l">6.2</span> Una vez que tenemos adjuntado el Pagaré y CI con sus respectivas firmas, hacemos click en <strong>“Enviar a cursar”<strong>.</p>
+
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/6-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/6-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+								
+								<div id="007">&nbsp;</div>
+								<h2>7. Créditos cursados y/o otorgados</h2>
+								
+								<div id="071">&nbsp;</div>
+								<p><span class="f-l">7.1</span>  En la bandeja de <strong>“Créditos Cursados”</strong> estarán mis negocios cursados y otorgados.</p>
+
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/7-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/7-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>								
+								
+								<div id="072">&nbsp;</div>
+								<p><span class="f-l">7.2</span> Para otorgar un negocio éste debe estar en estado Cursado. Hacemos click en <i class="far fa-file-alt"></i> y luego adjuntamos el FEI.</p> 
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/7-2.jpg' %} " class="img-responsive">
+									</br>
+								</div>	
+								
+								<div id="008">&nbsp;</div>
+								<h2>8. Solicitar una excepción de seguro</h2>	
+								
+								<p>Excepciones podrán ser tomadas por supervisores y zonales.</p>
+								
+								<div id="081">&nbsp;</div>
+								<p><span class="f-l">8.1</span> En caso de que se requiera solicitar una excepción de seguro, hacer click en <i class="fas fa-edit"></i></p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/8-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/8-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>								
+								
+								<div id="082">&nbsp;</div>
+								<p><span class="f-l">8.2</span> Luego pinchamos la pestaña de <strong>“Solicitud de excepciones”</strong>.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/8-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/8-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>									
+								
+								<div id="083">&nbsp;</div>
+								<p><span class="f-l">8.3</span> Se solicita la excepción y se pueden escribir comentarios. Luego de esto se envía a excepcionar.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/8-3.jpg' %} " class="img-responsive">	
+									</br>
+								</div>	
+								
+								<div id="009">&nbsp;</div>
+								<h2>9. Apelación de negocios</h2>
+
+								<p>Las apelaciones deberán ser aceptadas o rechazadas por supervisores y/o zonales</p>
+								
+								<div id="091">&nbsp;</div>
+								<p><span class="f-l">9.1</span> En caso de que se requiera apelar un negocio rechazado, debemos ir a la bandeja de <strong>“Créditos Rechazados”</strong> y hacer click en <i class="fas fa-edit"></i></p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/9-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">	
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/9-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="092">&nbsp;</div>
+								<p><span class="f-l">9.2</span> Debemos ir a la <strong>“Cotización”</strong> y hacemos click en <strong>“Enviar a Reevaluar”</strong>.</p>
+								<br/>
+								<div id="093">&nbsp;</div>
+								<p><span class="f-l">9.3</span> Antes de enviar escribimos los motivos por los cuales creemos se debe reevaluar el negocio.</p>
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/9-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">	
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/9-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/9-2-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										</br>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/9-2-3-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="010">&nbsp;</div>
+								<h2>10. Créditos rechazados</h2>
+								
+								<p>Para poder mejor planteamiento de negocio se debe <strong>“Crear una Copia”</strong>.</p>
+								
+								<div id="101">&nbsp;</div>
+								<p><span class="f-l">10.1</span> Vamos a nuestra bandeja de <strong>Créditos Rechazados</strong> y hacemos click en <i class="far fa-copy"></i></p>	
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/10-1.jpg' %} " class="img-responsive hidden-sm hidden-xs">	
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/10-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/10-1-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>										
+									</br>
+								</div>								
+								
+								<div id="102">&nbsp;</div>
+								<p><span class="f-l">10.2</span> Al hacer click se desplegará la siguiente ventana, en la cual se anula el negocio ingresado originalmente y se crea una copia.
+								Esto se hace para no tener que reingresar todos los datos nuevamente. </p>
+								<br/>
+								<p>El nuevo negocio se traslada a la bandeja de <strong>“solicitudes en evaluación”</strong> 
+								y luego ahí se modifican los datos para luego enviarlo a evaluar.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/10-2.jpg' %} " class="img-responsive hidden-sm hidden-xs">	
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/10-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>								
+								
+								<p><strong>¡Te invitamos a ingresar y disfrutar de este portal diseñado para ti!</strong></p>	
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+
+
+
+        <div class="overlay"></div>
+
+        <div class="icon-scroll">
+            <a href="#top"><img src = "{% static 'pages/'|add:slug|add:'/img/icon_scroll.png' %} " class="img-responsive"/></a>
+        </div>		
+
+        <!-- jQuery -->
+        <script src = "{% static 'pages/'|add:slug|add:'/vendor/jquery/jquery-1.12.0.min.js' %} "></script>
+        <!-- Bootstrap Js -->
+        <script src = "{% static 'pages/'|add:slug|add:'/vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+		
+		<script>
+			$(document).ready(function(){
+				$('.list-unstyled ul li a').on('click', function (e) {
+					e.preventDefault();
+
+					var target = this.hash;
+					var $target = $(target);
+
+					$('html, body').animate({
+						'scrollTop': $target.offset().top
+					}, 1000, 'swing');
+				});
+			});		
+		</script>
+		
+		<script>
+			$(document).scroll(function() {
+			  var y = $(this).scrollTop();
+			  if (y > 400) {
+				$('.icon-scroll').fadeIn();
+			  } else {
+				$('.icon-scroll').fadeOut();
+			  }
+			});
+		</script>		
+		
+    </body>
+</html>

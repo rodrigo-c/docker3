@@ -1,0 +1,82 @@
+/* Muro Alumni UNAB - Universidad Andres Bello Chile
+ * Desarrollado por AreaWeb - Santiago de Chile 2013 
+ */ 
+a:focus {
+   outline:none;
+ }
+ 
+.last {
+  margin-left:0;
+} 
+
+// Separadores
+
+@separador:20px;
+
+.separador-5 {
+  height:@separador - 15;
+}
+.separador-10 {
+  height:@separador - 10;
+}
+.separador-20 {
+  height:@separador;
+}
+.separador-30 {
+  height:@separador + 10;
+}
+.separador-40 {
+  height:@separador + 20;
+}
+.separador-50 {
+  height:@separador + 30;
+}
+.separador-60 {
+  height:@separador + 40;
+}
+.separador-70 {
+  height:@separador + 50;
+}
+.separador-80 {
+  height:@separador + 60;
+}
+
+.sombra-caja (@x: 0, @y: 0, @blur: 10px, @alpha:0.4) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.text-shadow (@sombra: 0 1px 1px rgba(0, 0, 0, 1)) {
+  text-shadow: @sombra;
+}
+.borde-redondeado (@radius: 3px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+.borde {
+  border:#dcdcdc solid 1px;
+}
+.borde-inferior {
+  border-bottom:#dcdcdc solid 1px;
+}
+.borde-superior {
+  border-top:#dcdcdc solid 1px;
+}
+
+body, input, button, textarea,p {
+ 
+}
+select {
+ font-family: 'Arial'; 
+}
+h1, h2, h3, h4, h5 {
+  padding:0;
+  margin:0;  
+}
+p {
+  margin:0;
+  color:#333333;
+  padding:0;
+}

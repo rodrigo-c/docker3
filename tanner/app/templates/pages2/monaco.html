@@ -1,0 +1,416 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Tanner | Manual Dealer</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link href = "{% static 'pages/'|add:slug|add:'/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+		
+        <!-- Our Custom CSS -->
+		<link rel="stylesheet" href = "{% static 'pages/'|add:slug|add:'/css/style.css' %} ">
+        <link rel="stylesheet" href = "{% static 'pages/'|add:slug|add:'/css/style-sidebar.css' %} ">
+		
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href = "{% static 'pages/'|add:slug|add:'/vendor/jquery/jquery.mCustomScrollbar.min' %} ">
+		
+		<!-- Font Awesome -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
+        
+    </head>
+    <body id="top">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <br/><br/><br/>
+					<p><strong>MANUAL MÓNACO – DEALER</strong></p>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#ingreso" data-toggle="collapse" aria-expanded="false"><strong>1. Ingreso</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="ingreso">
+							<li><a href="#001">1.0 Ingreso Mónaco</a></li>
+                            <li><a href="#01">1.1 Enlace</a></li>
+                            <li><a href="#012">1.2 Ingreso Email y Contraseña</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cotizacion" data-toggle="collapse" aria-expanded="false"><strong>2. Cotización</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="cotizacion">
+							<li><a href="#002">2.0 Nueva Cotización</a></li>
+                            <li><a href="#021">2.1 Cotización</a></li>
+                            <li><a href="#022">2.2 Aval y Compra</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                       <a href="#bandeja" data-toggle="collapse" aria-expanded="false"><strong>3. Bandeja</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="bandeja">
+							<li><a href="#003">3.0 Sección Bandeja</a></li>
+                            <li><a href="#031">3.1 Solicitudes en Evaluación</a></li>
+                            <li><a href="#032">3.2 Estados</a></li>
+                            <li><a href="#033">3.3 Chat Disponible</a></li>
+							<li><a href="#034">3.4 Créditos con Carta</a></li>
+							<li><a href="#035">3.5 Créditos Cursados</a></li>
+							<li><a href="#036">3.6 Créditos Rechazados</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#reportes" data-toggle="collapse" aria-expanded="false"><strong>4. Reportes</strong> <i class="fas fa-angle-down f-r"></i></a>
+                        <ul class="collapse list-unstyled" id="reportes">
+							<li><a href="#004">4.0 Botón Reportes</a></li>
+                            <li><a href="#041">4.1 Ejecutivo Tanner</a></li>
+                            <li><a href="#042">4.2 Notificaciones</a></li>
+                        </ul>
+                    </li
+                </ul>
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+				<div class="top-banner">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">					
+								<nav class="navbar navbar-default">
+									<div class="fluid">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<img src = "{% static 'pages/'|add:slug|add:'/img/logo-tanner.png' %} " class="img-responsive"/>
+											</div>
+
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<div class="close">
+													<a href="#" class="pull-right"><i class="far fa-window-close"></i> Cerrar sesión</a>
+												</div>
+											</div>
+										</div>	
+										
+										<div class="row">
+											<br/><br/>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<div class="navbar-header">
+													<div class="menu-open bg-color">
+														<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+															<i class="fas fa-bars"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+											
+											<div class="col-lg-6 col-md-6 col-sm-6 col-6-xs">
+												<div class="back">
+													<a href="{% url 'list' %}" class="btn btn-secondary pull-right" id="menu-toggle"><i class="fas fa-chevron-left"></i> Volver</a>
+												</div>
+											</div>
+											<br/><br/>
+										</div>		
+										
+										<div class="row">
+											<div class="col-lg-12 n-p">	
+												<h1>MANUAL MÓNACO – DEALER</h1>
+											</div>
+										</div>
+										
+									</div>
+								</nav>
+							</div>
+						</div>	
+
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+							<div class="content"> 
+								
+								<div id="001">&nbsp;</div>	
+								<h2>1. Ingreso Mónaco</h2>
+								
+								<div id="01">&nbsp;</div>
+								<p><span>1.1</span>  Escribe el siguiente enlace en tu navegador: <a href="#">https://monaco.tanner.cl/</a></p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-1.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+								
+								<div id="012">&nbsp;</div>
+								<p><span>1.2</span>  Ingresar tu email y contraseña.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-2.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>						
+								
+								<div id="013">&nbsp;</div>
+								<p><span>1.3</span>  Si has olvidado tu contraseña, ingresa aquí. Una nueva contraseña será enviada a tu Email.</p>
+								
+								<p><strong>Primero revisemos las 3 secciones disponibles para ti…</strong></p>
+								
+								<ul>
+									<li>Nueva Cotización</li>
+									<li>Bandeja</li>
+									<li>Reportes</li>												
+								</ul>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-3.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/1-3-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<p><strong>Te invitamos a revisar cada una de estas tres secciones:</strong></p>	
+								
+								<div id="002">&nbsp;</div>	
+								<h2>2. Nueva Cotización</h2>
+								
+								<p>En <strong>NUEVA COTIZACIÓN</strong> podrás ingresar tus prospectos de créditos:</p>
+
+								<p>En este botón podrás simular en línea el valor cuota de posibles créditos Tanner, así como también, cotizar en línea para ingresar tus créditos al proceso de aprobación.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2.jpg' %} " class="img-responsive hidden-sm hidden-xs">
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<p>Debes completar todos los campos en la simulación para poder continuar al paso del cotizador y posterior enviar a evaluar, quedando este prospecto de crédito en tu bandeja de <strong>SOLICITUDES EN EVALUACIÓN</strong>.</p>
+
+								<p>En los resultados de la <strong>Simulación</strong> obtendrás el valor cuota y la comisión dealer por ese crédito:</p>
+										
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-0.jpg' %} " class="img-responsive"/>
+									</br>
+								</div>	
+						
+								<div id="021">&nbsp;</div>
+								<p><span class="f-l">2.1</span> En la pestaña <strong>COTIZACIÓN</strong>, podrás completar los datos faltantes del cliente y si deslizas el cursor hacia abajo, verás que se despliegan dos alternativas donde se indica si el titular necesita aval o si el auto quedará a nombre de otra persona como una “compra para”: <span  class="f-no"  id="022">2.2</span></p>	
+							
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-1.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										
+										<br/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/2-1-xs-2.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="003">&nbsp;</div>	
+								<h2>3. Bandeja</h2>	
+								
+								<p>En la sección <strong>BANDEJA</strong>, visualizarás todo el detalle y procesos de evaluación de los créditos. Esta sección es muy importante para poder mantener a los clientes informados del estado de su crédito, así como también tu propio registro de créditos aprobados y/o rechazados.</p>
+
+								<p>El botón <strong>BANDEJA</strong> tiene cuatro secciones donde cada una tiene su respectiva función:</p>
+								
+								<div id="031">&nbsp;</div>
+								<p id="031"><span class="f-l">3.1</span> <strong>Solicitudes en Evaluación</strong>: Podrás visualizar todas las solicitudes pendientes de Evaluación y su estado, además en el botón Ver solicitud <i class="fas fa-edit"></i> puedes hacer click y ver la solicitud, donde siempre tendrás disponible un chat de conversación inter áreas, es decir, con las áreas involucradas en el flujo del negocio: Operaciones, riesgo, comerciales, otros.</p>
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-1.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-1-xs-1.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										
+										<br/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-1-xs-2.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										
+										<br/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-1-xs-3.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+										
+									</br>
+								</div>	
+
+								<div id="032">&nbsp;</div>	
+								<p><span class="f-l">3.2</span> <strong>Estados:</strong></p>	
+								
+								<ul>
+									<li><strong>En evaluación:</strong> negocio está siendo o será evaluado por un evaluador de riesgo.</li>
+									<li><strong>Aprobado con condición:</strong> negocio pre aprobado pendiente de validación.</li>
+									<li><strong>En validación:</strong> negocio está siendo o será validado por un validador de riesgo.</li>
+									<li><strong>Validado con reparos:</strong> negocio se validó, pero falta documentación para emitir carta.</li>												
+								</ul>
+
+								<div id="033">&nbsp;</div>
+								<p><span class="f-l">3.3</span> <strong>Chat disponible:</strong></p>	
+								
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-3.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-3-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="034">&nbsp;</div>
+								<p><span class="f-l">3.4</span> <strong>Créditos con Carta:</strong> Puedes ver los créditos con cartas de aprobación, buscando por ID o Rut del cliente. Además, podrás visualizar detalles del crédito, editar documentación y realizar copias respectivas de la información ingresada. </p>	
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-4.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-4-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+								
+								<div id="035">&nbsp;</div>
+								<p><span class="f-l">3.5</span> <strong>Créditos Cursados:</strong> Tendrás el detalle de los créditos cursados y su respectiva documentación. También puedes buscar por ID o Rut de cliente.</p>
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-5.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-5-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br></br>
+								</div>	
+								
+								<div id="036">&nbsp;</div>
+								<p><span class="f-l">3.6</span> <strong>Créditos Rechazados:</strong> con el detalle de cada crédito y puedes buscar por ID o Rut del cliente. En esta sección aparecerán los créditos anulados por copia, duplicidad de cliente, nueva cotización, no califica para el crédito, etc.</p>
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-6.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/3-6-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>	
+
+								<div id="004">&nbsp;</div>	
+								<h2>4. Reportes</h2>	
+
+								<p>En el botón <strong>REPORTES</strong>, podrás solicitar tu reporte comercial completando cada uno de los campos: por rango de fechas, por tasas, por estados, cuotas, montos, otros.</p>	
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/4-0.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/4-0-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>		
+								
+								<div id="041">&nbsp;</div>
+								<p><span class="f-l">4.1</span> Adicional, podrás revisar en el ícono seleccionado en color verde el <strong>Ejecutivo Tanner</strong> asignado a tu negocio, así como también reasignar ejecutivo.</p>
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/4-1.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/4-1-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br>
+								</div>
+	
+								<div id="042">&nbsp;</div>
+								<p><span class="f-l">4.2</span> Y en botón de la campana, también seleccionado en color verde, podrás revisar las <strong>notificaciones</strong> de los créditos ingresados: cambios de estado, gestiones realizadas, etc.</p>	
+	
+								<div class="capture">
+									<br/>
+										<img src = "{% static 'pages/'|add:slug|add:'/img/4-2.jpg' %} " class="img-responsive hidden-sm hidden-xs"/>
+										
+										<img src = "{% static 'pages/'|add:slug|add:'/img/4-2-xs.jpg' %} " class="img-responsive hidden-lg hidden-md visible-sm visible-xs"/>
+									</br></br>
+								</div>
+
+								<p><strong>¡Te invitamos a ingresar y disfrutar de este portal diseñado para ti!</strong></p>	
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+
+
+
+        <div class="overlay"></div>
+
+        <div class="icon-scroll">
+            <a href="#top"><img src = "{% static 'pages/'|add:slug|add:'/img/icon_scroll.png' %} " class="img-responsive"/></a>
+        </div>		
+
+        <!-- jQuery -->
+        <script src = "{% static 'pages/'|add:slug|add:'/vendor/jquery/jquery-1.12.0.min.js' %} "></script>
+        <!-- Bootstrap Js -->
+        <script src = "{% static 'pages/'|add:slug|add:'/vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+		
+		<script>
+			$(document).ready(function(){
+				$('.list-unstyled ul li a').on('click', function (e) {
+					e.preventDefault();
+
+					var target = this.hash;
+					var $target = $(target);
+
+					$('html, body').animate({
+						'scrollTop': $target.offset().top
+					}, 1000, 'swing');
+				});
+			});		
+		</script>
+		
+		<script>
+			$(document).scroll(function() {
+			  var y = $(this).scrollTop();
+			  if (y > 400) {
+				$('.icon-scroll').fadeIn();
+			  } else {
+				$('.icon-scroll').fadeOut();
+			  }
+			});
+		</script>		
+		
+    </body>
+</html>

@@ -1,0 +1,513 @@
+/* MUn Gol un Arbol - Fundación de la Familia
+ */ 
+ @import "config.less"; 
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+  background: url('../img/home-tanner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;  
+}
+
+.cap {
+  background: url('../img/cap-tanner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;  
+}
+
+.cap-list {
+  background: url('../img/cap-list-tanner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;	
+  height: 100vh;
+  width: 100%;  
+}
+
+.tanner-logo {
+	padding: 15px;
+}
+
+.vertical-align {
+	margin-top: 8%;
+}
+
+.center {
+	text-align: center;
+}
+
+.sesion {
+	a {
+		padding: 15px;
+		color: #fff;
+		float: right;
+	}
+}
+
+/*Login*/
+
+.login {
+	background-color: #fff;
+	padding: 25px;
+		h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			color: #0d66bb;
+			text-transform: uppercase;	
+			margin-bottom: 25px;	
+		}
+		.form-control {
+			border-radius: 0px;
+			height: 45px;				
+		}
+		.links {
+			.checkbox {
+				padding: 0;
+			}
+			a {
+				color: #0d66bb;
+			}
+		}
+		button {
+			border: 0;
+			height: 50px;
+			border-radius: 5px;
+			padding: 10px 30px;
+			color: #fff;
+			background-color: #82c330;
+				&:hover {
+					background-color: #548813;
+					color: #fff;
+				}
+		}	
+}
+
+/*Capacitaciones*/
+
+.cap-info {
+	text-align: right;
+	color: #fff;
+		h1 {
+			margin-bottom: 20px;
+			line-height: 110%;
+		}
+		p {
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;	
+			font-style: italic;	
+		}
+}
+
+.cap-buttons {
+	a {
+		color: #fff;
+		padding: 8px 30px 40px 30px;
+		margin-bottom: 20px;
+		border: 3px solid #fff;
+		border-radius: 5px;
+		cursor: pointer;
+		height: 60px;
+		display: inline-block;
+		float: right;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: none;
+		background: url('../img/btn-bg.png') repeat;
+			&:hover {
+				background: url('../img/btn-bg-h.png') repeat;
+			}
+			img {
+				margin-right: 10px;
+			}
+	}
+}
+
+/*Capacitaciones lista*/
+
+.top {
+	p {
+		color: #fff;
+		font-weight: 900;
+	}
+	a {
+		color: #fff;
+		font-weight: 900;
+		float: right;
+		border: 3px solid #fff;
+		border-radius: 5px;
+		cursor: pointer;
+		height: 40px;
+		padding: 7px 20px;
+		display: inline-block;
+		background: url('../img/btn-bg.png') repeat;		
+		text-align: center;
+		text-decoration: none;
+			&:hover {
+				background: url('../img/btn-bg-h.png') repeat;
+			}		
+	}	
+}
+
+.box {
+	border: 3px solid #fff; 
+	border-radius: 5px;
+	color: #fff;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 20px;
+	display: block;
+	cursor: pointer;
+	background: url('../img/btn-bg.png') repeat;
+	text-align: center;
+	text-decoration: none;	
+		&:hover {
+			background: url('../img/btn-bg-h.png') repeat;
+			text-decoration: none;
+		}	
+		.down {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+		}
+		.doc {
+			img {
+				margin: 0 auto;
+				padding: 10px;
+			}
+		}
+		.doc-info {
+			p {
+				color: #fff;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;				
+			}
+		}
+}
+
+
+/* XS _______________________________________________________________ */
+@media (max-width: 480px) {
+	
+	.sesion {
+		a {
+			font-size: 11px;
+		}
+	}	
+	
+	.login {
+		h1 {
+			font-size: 18px;
+		}
+	.links {
+		.checkbox {
+			font-size: 11px;
+			}
+			a {
+				font-size: 11px;
+			}
+		}						
+	}
+	
+	.cap-info {
+		h1 {
+			font-size: 38px;
+		}
+		h2{
+			font-size: 22px;
+		}		
+		p {
+			color: #fff;
+			font-size: 12px;
+		}
+	}	
+	
+	.cap-buttons {
+		a {
+			width: 240px;
+			font-size: 12px;
+		}
+	}
+
+	.top {
+		p {
+			font-size: 18px;
+		}
+		a {
+			font-size: 12px;		
+		}	
+	}
+
+	.box {
+		.doc-info {
+			p {
+				font-size: 13px;				
+			}
+		}
+	}	
+	
+}
+
+/* XS _______________________________________________________________ */
+@media (min-width: 500px) {
+	
+	.sesion {
+		a {
+			font-size: 11px;
+		}
+	}	
+	
+	.login {
+		h1 {
+			font-size: 20px;
+		}
+	.links {
+		.checkbox {
+			font-size: 11px;
+			}
+			a {
+				font-size: 11px;
+			}
+		}						
+	}
+	
+	.cap-info {
+		h1 {
+			font-size: 41px;
+		}
+		h2{
+			font-size: 24px;
+		}		
+		p {
+			color: #fff;
+			font-size: 14px;
+		}
+	}	
+	
+	.cap-buttons {
+		a {
+			width: 250px;
+			font-size: 14px;
+		}
+	}	
+	
+	.top {
+		p {
+			font-size: 18px;
+		}
+		a {
+			font-size: 11px;		
+		}	
+	}
+
+	.box {
+		.doc-info {
+			p {
+				font-size: 14px;				
+			}
+		}
+	}	
+	
+}
+
+
+/* SM _______________________________________________________________ */
+@media (min-width: 767px) {
+	
+	.sesion {
+		a {
+			font-size: 12px;
+		}
+	}	
+	
+	.login {
+		h1 {
+			font-size: 20px;
+		}
+	.links {
+		.checkbox {
+			font-size: 11px;
+			}
+			a {
+				font-size: 11px;
+			}
+		}						
+	}
+
+	.cap-info {
+		h1 {
+			font-size: 50px;
+		}
+		h2{
+			font-size: 26px;
+		}		
+		p {
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+
+	.cap-buttons {
+		a {
+			width: 260px;
+			font-size: 16px;
+		}
+	}
+
+	.top {
+		p {
+			font-size: 20px;
+		}
+		a {
+			font-size: 12px;		
+		}	
+	}
+
+	.box {
+		.doc-info {
+			p {
+				font-size: 15px;				
+			}
+		}
+	}	
+	
+}
+
+
+/* MD _______________________________________________________________ */
+@media (min-width: 992px) {
+	
+	.sesion {
+		a {
+			font-size: 13px;
+		}
+	}	
+	
+	.login {
+		h1 {
+			font-size: 22px;
+		}
+	.links {
+		.checkbox {
+			font-size: 11px;
+			}
+			a {
+				font-size: 11px;
+			}
+		}						
+	}
+	
+	.cap-info {
+		h1 {
+			font-size: 53px;
+		}
+		h2{
+			font-size: 28px;
+		}		
+		p {
+			color: #fff;
+			font-size: 16px;
+		}
+	}
+
+	.cap-buttons {
+		a {
+			width: 270px;
+			font-size: 17px;
+		}
+	}
+
+	.top {
+		p {
+			font-size: 22px;
+		}
+		a {
+			font-size: 13px;		
+		}	
+	}	
+	
+	.box {
+		.doc-info {
+			p {
+				font-size: 16px;				
+			}
+		}
+	}	
+	
+	
+}
+
+
+/* LG________________________________________________________________ */
+@media (min-width: 1200px) {
+
+	.sesion {
+		a {
+			font-size: 14px;
+		}
+	}
+
+	.login {
+		h1 {
+			font-size: 25px;
+		}
+	.links {
+		.checkbox {
+			font-size: 12px;
+			}
+			a {
+				font-size: 12px;
+			}
+		}						
+	}
+	
+	.cap-info {
+		h1 {
+			font-size: 55px;
+		}
+		h2{
+			font-size: 30px;
+		}		
+		p {
+			color: #fff;
+			font-size: 18px;
+		}
+	}
+
+	.cap-buttons {
+		a {
+			width: 280px;
+			font-size: 18px;
+		}
+	}
+
+	.top {
+		p {
+			font-size: 25px;
+		}
+		a {
+			font-size: 14px;		
+		}	
+	}
+
+	.box {
+		.doc-info {
+			p {
+				font-size: 17px;				
+			}
+		}
+	}	
+	
+}

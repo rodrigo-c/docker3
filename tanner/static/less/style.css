@@ -1,0 +1,421 @@
+/* MUn Gol un Arbol - Fundación de la Familia
+ */
+/* Muro Alumni UNAB - Universidad Andres Bello Chile
+ * Desarrollado por AreaWeb - Santiago de Chile 2013 
+ */
+a:focus {
+  outline: none;
+}
+.last {
+  margin-left: 0;
+}
+.separador-5 {
+  height: 5px;
+}
+.separador-10 {
+  height: 10px;
+}
+.separador-20 {
+  height: 20px;
+}
+.separador-30 {
+  height: 30px;
+}
+.separador-40 {
+  height: 40px;
+}
+.separador-50 {
+  height: 50px;
+}
+.separador-60 {
+  height: 60px;
+}
+.separador-70 {
+  height: 70px;
+}
+.separador-80 {
+  height: 80px;
+}
+.borde {
+  border: #dcdcdc solid 1px;
+}
+.borde-inferior {
+  border-bottom: #dcdcdc solid 1px;
+}
+.borde-superior {
+  border-top: #dcdcdc solid 1px;
+}
+select {
+  font-family: 'Arial';
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+  color: #333333;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.home {
+  background: url('../img/home-tanner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.cap {
+  background: url('../img/cap-tanner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.cap-list {
+  background: url('../img/cap-list-tanner.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.tanner-logo {
+  padding: 15px;
+}
+.vertical-align {
+  margin-top: 8%;
+}
+.center {
+  text-align: center;
+}
+.sesion a {
+  padding: 15px;
+  color: #fff;
+  float: right;
+}
+/*Login*/
+.login {
+  background-color: #fff;
+  padding: 25px;
+}
+.login h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0d66bb;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.login .form-control {
+  border-radius: 0px;
+  height: 45px;
+}
+.login .links .checkbox {
+  padding: 0;
+}
+.login .links a {
+  color: #0d66bb;
+}
+.login button {
+  border: 0;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #82c330;
+}
+.login button:hover {
+  background-color: #548813;
+  color: #fff;
+}
+/*Capacitaciones*/
+.cap-info {
+  text-align: right;
+  color: #fff;
+}
+.cap-info h1 {
+  margin-bottom: 20px;
+  line-height: 110%;
+}
+.cap-info p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.cap-buttons a {
+  color: #fff;
+  padding: 8px 30px 40px 30px;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  display: inline-block;
+  float: right;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background: url('../img/btn-bg.png') repeat;
+}
+.cap-buttons a:hover {
+  background: url('../img/btn-bg-h.png') repeat;
+}
+.cap-buttons a img {
+  margin-right: 10px;
+}
+/*Capacitaciones lista*/
+.top p {
+  color: #fff;
+  font-weight: 900;
+}
+.top a {
+  color: #fff;
+  font-weight: 900;
+  float: right;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  padding: 7px 20px;
+  display: inline-block;
+  background: url('../img/btn-bg.png') repeat;
+  text-align: center;
+  text-decoration: none;
+}
+.top a:hover {
+  background: url('../img/btn-bg-h.png') repeat;
+}
+.box {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer;
+  background: url('../img/btn-bg.png') repeat;
+  text-align: center;
+  text-decoration: none;
+}
+.box:hover {
+  background: url('../img/btn-bg-h.png') repeat;
+  text-decoration: none;
+}
+.box .down {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.box .doc img {
+  margin: 0 auto;
+  padding: 10px;
+}
+.box .doc-info p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+/* XS _______________________________________________________________ */
+@media (max-width: 480px) {
+  .sesion a {
+    font-size: 11px;
+  }
+  .login h1 {
+    font-size: 18px;
+  }
+  .login .links .checkbox {
+    font-size: 11px;
+  }
+  .login .links a {
+    font-size: 11px;
+  }
+  .cap-info h1 {
+    font-size: 38px;
+  }
+  .cap-info h2 {
+    font-size: 22px;
+  }
+  .cap-info p {
+    color: #fff;
+    font-size: 12px;
+  }
+  .cap-buttons a {
+    width: 240px;
+    font-size: 12px;
+  }
+  .top p {
+    font-size: 18px;
+  }
+  .top a {
+    font-size: 12px;
+  }
+  .box .doc-info p {
+    font-size: 13px;
+  }
+}
+/* XS _______________________________________________________________ */
+@media (min-width: 500px) {
+  .sesion a {
+    font-size: 11px;
+  }
+  .login h1 {
+    font-size: 20px;
+  }
+  .login .links .checkbox {
+    font-size: 11px;
+  }
+  .login .links a {
+    font-size: 11px;
+  }
+  .cap-info h1 {
+    font-size: 41px;
+  }
+  .cap-info h2 {
+    font-size: 24px;
+  }
+  .cap-info p {
+    color: #fff;
+    font-size: 14px;
+  }
+  .cap-buttons a {
+    width: 250px;
+    font-size: 14px;
+  }
+  .top p {
+    font-size: 18px;
+  }
+  .top a {
+    font-size: 11px;
+  }
+  .box .doc-info p {
+    font-size: 14px;
+  }
+}
+/* SM _______________________________________________________________ */
+@media (min-width: 767px) {
+  .sesion a {
+    font-size: 12px;
+  }
+  .login h1 {
+    font-size: 20px;
+  }
+  .login .links .checkbox {
+    font-size: 11px;
+  }
+  .login .links a {
+    font-size: 11px;
+  }
+  .cap-info h1 {
+    font-size: 50px;
+  }
+  .cap-info h2 {
+    font-size: 26px;
+  }
+  .cap-info p {
+    color: #fff;
+    font-size: 14px;
+  }
+  .cap-buttons a {
+    width: 260px;
+    font-size: 16px;
+  }
+  .top p {
+    font-size: 20px;
+  }
+  .top a {
+    font-size: 12px;
+  }
+  .box .doc-info p {
+    font-size: 15px;
+  }
+}
+/* MD _______________________________________________________________ */
+@media (min-width: 992px) {
+  .sesion a {
+    font-size: 13px;
+  }
+  .login h1 {
+    font-size: 22px;
+  }
+  .login .links .checkbox {
+    font-size: 11px;
+  }
+  .login .links a {
+    font-size: 11px;
+  }
+  .cap-info h1 {
+    font-size: 53px;
+  }
+  .cap-info h2 {
+    font-size: 28px;
+  }
+  .cap-info p {
+    color: #fff;
+    font-size: 16px;
+  }
+  .cap-buttons a {
+    width: 270px;
+    font-size: 17px;
+  }
+  .top p {
+    font-size: 22px;
+  }
+  .top a {
+    font-size: 13px;
+  }
+  .box .doc-info p {
+    font-size: 16px;
+  }
+}
+/* LG________________________________________________________________ */
+@media (min-width: 1200px) {
+  .sesion a {
+    font-size: 14px;
+  }
+  .login h1 {
+    font-size: 25px;
+  }
+  .login .links .checkbox {
+    font-size: 12px;
+  }
+  .login .links a {
+    font-size: 12px;
+  }
+  .cap-info h1 {
+    font-size: 55px;
+  }
+  .cap-info h2 {
+    font-size: 30px;
+  }
+  .cap-info p {
+    color: #fff;
+    font-size: 18px;
+  }
+  .cap-buttons a {
+    width: 280px;
+    font-size: 18px;
+  }
+  .top p {
+    font-size: 25px;
+  }
+  .top a {
+    font-size: 14px;
+  }
+  .box .doc-info p {
+    font-size: 17px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
